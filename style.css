@@ -1,0 +1,50 @@
+body {
+  background-color: #ffe6f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cat-img, .envelope-img {
+  width: 200px;
+  border-radius: 15px;
+}
+
+h1, h2 {
+  color: #ff4d94;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.pink {
+  background-color: #ff4d94;
+  color: white;
+}
+
+button.pink:hover {
+  background-color: #e63978;
+}
+
+button.green {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.green:hover {
+  background-color: #3d8b41;
+}
