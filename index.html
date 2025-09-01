@@ -2,18 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy National Girlfriend Day</title>
+  <title>Happy Birthday, Bang ko</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Background video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="videos/Toj.mp4" type="video/mp4">
+  </video>
+
+  <!-- Card content -->
   <div class="card">
-    <img src="cat.jpg" alt="Cute cat" class="cat-img">
-    <h1>HAPPY NATIONAL GIRLFRIEND DAY</h1>
+    <img src="images/BANG1.JPG" alt="Bang 1" class="bang-img">
+    <h1>HAPPY BIRTHDAY, BANG KO</h1>
     <p>(1 August 2025)</p>
     <p>Click the next button!! (づ｡◕‿‿◕｡)づ ♥</p>
-    <a href="page2.html">
-      <button>Next!! ➜</button>
-    </a>
+    <a href="page2.html"><button>Next ➜</button></a>
   </div>
+
+  <!-- Script AFTER the video -->
+  <script>
+    const video = document.getElementById("bg-video");
+
+    video.addEventListener("loadedmetadata", function() {
+      video.currentTime = 10; // jump to 50 seconds
+    });
+  </script>
 </body>
 </html>
