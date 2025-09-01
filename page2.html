@@ -18,5 +18,14 @@
     <a href="index.html"><button>⬅ Back</button></a>
     <a href="page3.html"><button>Next ➜</button></a>
   </div>
+
+  <!-- Script AFTER the video -->
+  <script>
+    const video = document.getElementById("bg-video");
+
+    video.addEventListener("loadedmetadata", function() {
+      video.currentTime = 10; // jump to 50 seconds
+    });
+  </script>
 </body>
 </html>

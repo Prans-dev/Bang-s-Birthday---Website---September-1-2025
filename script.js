@@ -4,3 +4,4 @@ function goToScreen(num) {
   // Show chosen screen
   document.getElementById("screen" + num).classList.remove("hidden");
 }
+

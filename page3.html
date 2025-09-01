@@ -2,13 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Surprise!</title>
+  <title>Page 3</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Background video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="../videos/Toj.mp4" type="video/mp4">
+  </video>
+
   <div class="card">
-    <h1>💖 Surprise Message! 💖</h1>
-    <p>You’re amazing, and I appreciate you so much! 🌸✨</p>
+    <img src="images/BANG3.JPG" alt="Bang 3" class="bang-img">
+    <h1>Final Page 🎉</h1>
+    <p>I love you forever 💕</p>
+    <a href="page2.html"><button>⬅ Back</button></a>
   </div>
+
+  <!-- Script AFTER the video -->
+  <script>
+    const video = document.getElementById("bg-video");
+
+    video.addEventListener("loadedmetadata", function() {
+      video.currentTime = 10; // jump to 50 seconds
+    });
+  </script>
 </body>
 </html>
