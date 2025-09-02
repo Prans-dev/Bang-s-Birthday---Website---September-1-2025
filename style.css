@@ -1,13 +1,15 @@
 html, body {
-  height: 100%;
+  min-height: 100%;   /* allow it to grow */
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;  /* content starts from top */
+  overflow-y: auto;         /* enable vertical scroll */
 }
+
 
 /* Background image */
 .background {
@@ -30,8 +32,34 @@ html, body {
   width: 90%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   border: 5px solid #fc94af;
+
+  margin-top: 50px;
 }
 
+.card2 {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 68%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 5px solid #fc94af;
+  margin-left: 40px;
+
+   text-align: left;
+}
+
+.card2 .p1 {
+  text-align: left;   /* keep left alignment */
+  text-indent: 40px;  /* indent first line */
+  line-height: 1.6;   /* nicer spacing for readability */
+}
+
+.card2 .p2 {
+  text-align: left;   /* keep left alignment */
+  text-indent: 40px;  /* indent first line */
+  line-height: 1.6;   /* nicer spacing for readability */
+}
 
 
 .bang-img {
@@ -63,12 +91,34 @@ button {
 
 button:hover {
   background-color: #e63978;
+  
 }
+
+.button3 {
+  margin: 8px;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff4d94;
+  color: white;
+  width: 65%;       /* Full width on phone */
+  max-width: 250px;  /* Don’t stretch too much */
+
+}
+
+.button3:hover {
+  background-color: #e63978;
+  
+}
+
 
 .button-group {
   display: flex;
-  justify-content: center;  /* center them */
-  gap: 15px;                /* space between buttons */
+  justify-content: center;  /* keep them centered */
+  gap: 15px;
+  margin-left: -20px;       /* move left (adjust px as needed) */
 }
 
 .button-group a {
