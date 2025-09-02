@@ -29,10 +29,24 @@
     Your browser does not support video.
   </video>
 
-  <!-- Song (plays in background) -->
-  <audio autoplay loop>
+  <!-- Song (will play after YES click from previous page) -->
+  <audio id="bgMusic" loop>
     <source src="music/stitch_roller.mp3" type="audio/mp3">
     Your browser does not support audio.
   </audio>
+
+  <script>
+    // Start music right after page loads (YES was clicked)
+    window.addEventListener("load", () => {
+      const music = document.getElementById("bgMusic");
+      music.play().catch(err => {
+        console.log("Autoplay blocked, waiting for user interaction.");
+        // fallback: play if user taps screen
+        document.body.addEventListener("click", () => {
+          music.play();
+        }, { once: true });
+      });
+    });
+  </script>
 </body>
 </html>
