@@ -65,6 +65,16 @@ button:hover {
   background-color: #e63978;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;  /* center them */
+  gap: 15px;                /* space between buttons */
+}
+
+.button-group a {
+  text-decoration: none; /* remove underline from links */
+}
+
 /* Hide inactive pages */
 .hidden {
   display: none;
