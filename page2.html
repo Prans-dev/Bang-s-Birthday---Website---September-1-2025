@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Page 2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background video -->
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src=<source src="/Bang-s-Birthday---Website---September-1-2025/videos/Toj.mp4" type="video/mp4">
- type="video/mp4">
-  </video>
-
+ 
+  <!-- Background picture-->
+  <div class="background"></div>
+  
   <div class="card">
     <img src="images/BANG2.JPG" alt="Bang 2" class="bang-img">
     <h1>Second Page 💖</h1>
@@ -19,14 +18,5 @@
     <a href="index.html"><button>⬅ Back</button></a>
     <a href="page3.html"><button>Next ➜</button></a>
   </div>
-
-  <!-- Script AFTER the video -->
-  <script>
-    const video = document.getElementById("bg-video");
-
-    video.addEventListener("loadedmetadata", function() {
-      video.currentTime = 10; // jump to 50 seconds
-    });
-  </script>
 </body>
 </html>

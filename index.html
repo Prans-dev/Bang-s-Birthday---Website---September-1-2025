@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Happy Birthday, Bang ko</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background video -->
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="videos/Toj.mp4" type="video/mp4">
-  </video>
+  <!-- Background picture-->
+  <div class="background"></div>
+
 
   <!-- Card content -->
   <div class="card">
@@ -20,14 +20,5 @@
     <p>Click the next button!! (づ｡◕‿‿◕｡)づ ♥</p>
     <a href="page2.html"><button>Next ➜</button></a>
   </div>
-
-  <!-- Script AFTER the video -->
-  <script>
-    const video = document.getElementById("bg-video");
-
-    video.addEventListener("loadedmetadata", function() {
-      video.currentTime = 10; // jump to 50 seconds
-    });
-  </script>
 </body>
 </html>
