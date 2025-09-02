@@ -1,15 +1,19 @@
-body {
+html, body {
+  height: 100%;         /* Make sure body fills the screen */
   margin: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
   text-align: center;
   overflow: hidden;
 
-  /* Centering with flexbox */
+  /* Flexbox centering */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
+
 
 
 /* Background video */
@@ -30,11 +34,11 @@ body {
   border-radius: 20px;
   padding: 30px;
   max-width: 500px;
-  width: 90%; /* make it responsive */
+  width: 90%; /* responsive */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   border: 5px solid #fc94af;
-  margin: 0; /* remove fixed margin */
 }
+
 
 
 
