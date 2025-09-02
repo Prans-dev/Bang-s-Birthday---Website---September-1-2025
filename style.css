@@ -57,7 +57,7 @@ html, body {
 
 .card2 .p2 {
   text-align: left;   /* keep left alignment */
-  text-indent: 40px;  /* indent first line */
+  margin-left: 30px;
   line-height: 1.6;   /* nicer spacing for readability */
 }
 
