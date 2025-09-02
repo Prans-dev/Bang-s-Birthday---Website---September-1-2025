@@ -3,7 +3,14 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   overflow: hidden;
+
+  /* Centering with flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
 
 /* Background video */
 #bg-video {
@@ -21,12 +28,14 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  padding: 20px;
-  max-width: 500px;   /* Instead of fixed 500px */
-  margin: 50px auto;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%; /* make it responsive */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   border: 5px solid #fc94af;
+  margin: 0; /* remove fixed margin */
 }
+
 
 
 .bang-img {
